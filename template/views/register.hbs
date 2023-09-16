@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    <div class="wrapper">
+        <div  class="form-box register">
+            <h2>REGISTRATION</h2>
+            <form action="/login" method="POST">
+                <div class="input-box">
+                    <label for="">Name</label>
+                    <input type="text" name="name" placeholder="write your name"required style="color: rgb(13, 17, 20);">
+                    <span class="icon"><i class="fa-solid fa-user" style="color: rgb(13, 17, 20);"></i></span><br>
+
+                    </div>
+                    <div class="input-box">
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" placeholder="write your email"required style="color: rgb(13, 17, 20);">
+                    <span class="icon"><i class="fa-solid fa-envelope-open-text" style="color: rgb(13, 17, 20);"></i></span>
+                </div>
+                <div class="input-box">
+                    
+                    <label for="">Password</label>
+                    <input type="password" name="password" placeholder="write your password" required style="color: rgb(13, 17, 20);">
+                    <span class="icon"><i class="fa-solid fa-lock" style="color: rgb(13, 17, 20);"></i></span>
+                    
+                </div>
+                <!-- <div class="remeber-forgot">
+                    <label for=""><input type="checkbox"> I agree to all the terms</label>
+                </div> -->
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="/login" class="login-link">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1b45767895.js" crossorigin="anonymous"></script>
+    {{!-- <div class="form__body">
+        <h1>Registration</h1>
+        <form action="/login" method="POST" onclick="return validite()">
+
+            <input type="text" name="fname" class="form-element" required placeholder="First Name *" >
+            
+            <input type="text" name="lname" class="form-element" required placeholder="Last Name *" >
+            
+            <input type="email" name="email" class="form-element" required placeholder="Your Email *" >
+            
+            <label for="">Gender :</label>
+            <input type="radio" name="gender" value="male">
+            <span>Male</span>
+            
+            <input type="radio" name="gender" value="female">
+            <span>Female</span>
+            
+            <input type="number" minlength="10" maxlength="10" name="phone" class="form-element" required placeholder="Your Phone *" >
+            
+            <input type="number" name="age" class="form-element" required placeholder="Enter your Age *" >
+            
+            <input type="password" id="password" name="password" class="form-element" required placeholder="Password *" >
+            
+            <input type="password" name="confirmPassword" class="form-element" required placeholder="Confirm Password *" onkeyup="check(this)">
+            <error id="alert"></error>
+            <input type="submit" value="Register" class="form-element">
+        </form>
+            <p>Already have an account <br> click here to <a href="/login">login</a> </p>
+    </div> --}}
+</body>
+{{!-- <script>
+    let password = document.querySelector('#password');
+    let flag = 0;
+    function check(elem) {
+        if(elem.value.length > 0) {
+            if(elem.value != password.value){
+                document.querySelector('#alert').innerText="Confirm Password doesn't match";
+                flag = 0;
+            } else {
+                document.querySelector('#alert').innerText="";
+                flag = 1;
+            }
+        } else {
+            document.querySelector('#alert').innerText="Pls enter Confirm Password";
+            flag = 1;
+        }
+    }
+    function validite() {
+        if(flag == 1)
+            return true;
+        else
+            return false;
+    }
+</script> --}}
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega-Code | Lobby</title>
+    <link rel="stylesheet" href="css/lobby.css" />
+  </head>
+  <body>
+
+    <main id="lobby-container">
+      <div id="form-container">
+        <div id="form__container__header">
+          <h3>Create OR join a Room</h3>
+        </div>
+        
+        <div id="form__container__wrapper">
+          <form action="/online-class" id="join-form">
+            <input type="text" name="invite_link" required />
+            <input type="submit" value="Join Room"/>
+          </form>
+        </div>
+      </div>
+    </main>
+
+  </body>
+  <script>
+    let form = document.getElementById('join-form');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let inviteCode = e.target.invite_link.value;
+      window.location = `online-class`;
+    });
+  </script>
+      {{!-- window.location = `online-class?room=${inviteCode}`; --}}
+</html>

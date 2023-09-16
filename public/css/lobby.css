@@ -1,0 +1,74 @@
+html {
+  color-scheme: dark light;
+}
+
+:root {
+  --body-bg: hsl(0, 0%, 25%);
+  --clr-dark: #070a12;
+  --clr-light: #f9f9fb;
+  --clr-accent: #f43f70;
+  --clr-rgba: rgba(244, 63, 112, 0.2);
+  --form-color: #4f5558;
+}
+
+body {
+  background: var(--body-bg);
+  color: #fff;
+  font-family: system-ui;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+#form-container {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  background: var(--clr-dark);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#form__container__header {
+  padding: 5px;
+  background: rgba(35, 144, 255, 0.9);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: var(--clr-dark);
+  font-size: 2rem;
+}
+
+#form__content__wrapper {
+  padding: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 16px 20px;
+  font-size: 15px;
+  background-color: #736380;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+input[type="submit"] {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  background-color: var(--form-bg);
+  border-radius: 0 0 10px 10px;
+  border: 5px solid var(--clr-accent);
+  transition: .3s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    <div class="wrapper">
+        <div  class="form-box login">
+            <h2>LOGIN</h2>
+            <form action="/" method="POST">
+                <div class="input-box">
+
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" placeholder="write your email"required style="color: rgb(13, 17, 20);">
+                    <span class="icon"><i class="fa-solid fa-envelope-open-text" style="color: rgb(13, 17, 20);"></i></span>
+                </div>
+                <div class="input-box">
+                    
+                    <label for="">Password</label>
+                    <input type="password" name="password" placeholder="write your password" required style="color: rgb(13, 17, 20);">
+                    <span class="icon"><i class="fa-solid fa-lock" style="color: rgb(13, 17, 20);"></i></span>
+                    
+                </div>
+                <!-- <div class="remeber-forgot">
+                    <label for=""><input type="checkbox"> Remember Me</label>
+                    <a href="">Forget Password?</a>
+                </div> -->
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="/register" class="registration-link">Register</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1b45767895.js" crossorigin="anonymous"></script>
+    {{!-- <div class="links">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+    </div>
+
+    <div class="form__body">
+        <h1>Login</h1>
+        <form action="/" method="POST">
+            
+            <input type="email" name="email" class="form-element" required placeholder="Your Email *" >
+            
+            <input type="password" id="password" name="password" class="form-element" required placeholder="Password *" >
+
+            <input type="submit" value="Login" class="form-element">
+        </form>
+    </div> --}}
+</body>
+</html>
